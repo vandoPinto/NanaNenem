@@ -1,0 +1,101 @@
+.albumart{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.songtitle{
+	color: #000000;
+}
+
+.progressContainer{
+	color: #000000;
+}
+.current{
+	color: #000000;
+}
+
+.duration{
+	color: #000000;	
+}
+
+.item_body {
+	position: absolute;
+  padding: 16px;
+  white-space: normal;
+  background: rgba(169,169,169, .7);
+  top: 50%;
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%);
+}
+
+.btn{
+	padding: 15px;
+	background: #9966FF;
+	position: relative;
+	color: #FFF;
+}
+
+.tempo{
+	  padding: 16px;
+	position: relative;
+	display: flex;
+	justify-content: justify;
+}
+
+#current_time{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: left;
+}
+
+#duration_time{
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+}
+.controles .btn{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.hidden{
+	display: none;
+}
+
+#progressContainer{
+	padding: 16px;
+}
+.songInfo{
+	padding-bottom: 16px;
+}
+
+.timerPopUp{
+	z-index: 9999;
+	width: 75%;
+	text-align: center;
+	position: absolute;
+	background: rgba(255,255,255,1);
+	border: 2px solid #9966FF;
+	border-radius: 30px;
+	left: 50%;
+	top: 50%;
+	padding: 30px;
+	font-family: monospace;
+	font-size: 15px;
+	transform: translate(-50%,-50%);
+}
+
+.controles{
+	position: relative;
+	width: 100%;
+	text-align: center;
+}

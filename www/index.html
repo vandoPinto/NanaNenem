@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--https://github.com/jakesgordon/javascript-tower-platformer-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src = "lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+
+  <body ng-app="starter" ng-controller='showBanner'>
+
+    <ion-pane>
+      <ion-content>
+
+        <img src="img/default.jpg" alt="default" class="albumart">
+        <div class="btn fa fa-clock-o timer " style="position: absolute;  top:0;  left: 0;" ></div>
+
+        <div ng-controller='showBanner'>
+
+            <div class="item_body">
+
+            <div ng-controller="tagAudio">
+               <audio ng-repeat="musica in musicas" src="{{musica.local}}" class="playsong" data-songartist="{{musica.artista}}" data-songtitle="{{musica.nomeMusica}}" data-albumart="{{musica.imagem}}"></audio>
+            </div>
+
+            <div class="songInfo">
+              <div class="songartist">Artista: --</div>
+              <div class="songtitle">Musica: --</div>
+            </div>
+            <div class="controles">
+              <div class="btn fa fa-step-backward prev" "></div>
+              <div class="btn fa fa-play play" "></div>
+              <div class="btn fa fa-pause pause" "></div>
+              <div class="btn fa fa-step-forward next" "></div>
+              <div class="btn fa fa-repeat repeat" ></div>
+              <div class="btn fa fa-circle-o-notch hidden repeat" ng-click="showInterstitialAd();"></div>
+            </div>
+
+
+            <div id="progressContainer" style="width: 100%; background-color: transparent;">
+              <div id="progress" style="height: 5px; background-color: deeppink; width: 0%;"></div>
+            </div>
+
+            <div class="tempo">
+              <div class="current" id="current_time">0:00</div>
+              <div class="duration" id="duration_time">0:00</div>
+            </div>
+            
+          </div>
+
+        </div>
+          
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
