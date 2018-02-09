@@ -26,8 +26,8 @@ app.run(function($ionicPlatform) {
           interstitial: 'ca-app-pub-6869992474017983/7563979554'
         },
         android : {
-          banner: 'ca-app-pub-3773811061508464/9999165567',
-          interstitial: 'ca-app-pub-3773811061508464/4171946208'
+          banner: 'ca-app-pub-6285246507445010/4240299392',
+          interstitial: 'ca-app-pub-6285246507445010/3829235857'
         },
         wp8 : {
           banner: 'ca-app-pub-6869992474017983/8878394753',
