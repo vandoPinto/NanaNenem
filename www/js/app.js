@@ -26,8 +26,8 @@ app.run(function($ionicPlatform) {
           interstitial: 'ca-app-pub-6869992474017983/7563979554'
         },*/
         android : {
-          banner: 'ca-app-pub-6285246507445010/4247026495',
-          interstitial: 'ca-app-pub-6285246507445010/3829235857'
+          banner: 'ca-app-pub-6285246507445010/8078857075',
+          interstitial: 'ca-app-pub-6285246507445010/9412598970'
         },
         wp8 : {
           banner: 'ca-app-pub-6869992474017983/8878394753',
@@ -51,7 +51,7 @@ app.run(function($ionicPlatform) {
                 bannerAtTop: false, // set to true, to put banner at top
                 overlap: false, // set to true, to allow banner overlap webview
                 offsetTopBar: false, // set to true to avoid ios7 status bar overlap
-                isTesting: false, // receiving test ad
+                isTesting: true, // receiving test ad
                 autoShow: true // auto show interstitial ad when loaded
             });
             registerAdEvents();
