@@ -21,12 +21,12 @@ app.run(function($ionicPlatform) {
       function initAd(){
         if ( window.plugins && window.plugins.AdMob ) {
           var ad_units = {
-        ios : {
+       /* ios : {
           banner: 'ca-app-pub-6869992474017983/4806197152',
           interstitial: 'ca-app-pub-6869992474017983/7563979554'
-        },
+        },*/
         android : {
-          banner: 'ca-app-pub-6285246507445010/4240299392',
+          banner: 'ca-app-pub-6285246507445010/4247026495',
           interstitial: 'ca-app-pub-6285246507445010/3829235857'
         },
         wp8 : {
