@@ -47,6 +47,25 @@
     <ion-pane>
       <ion-content>
 
+        <div id="smt-130377655" style="padding: 0px"></div>
+        <script type="text/javascript" src="https://soma-assets.smaato.net/js/smaatoAdTag.js"></script>
+        <script>
+          function callBackForSmaato(status) {
+            if (status == "SUCCESS") {
+              alert("callBack is being called with status : " + status);
+            } else if (status == "ERROR") {
+              alert("callBack is being called with status : " + status);
+            }
+          };
+          SomaJS.loadAd({
+            adDivId: "smt-130377655",
+            publisherId: 0,
+            adSpaceId: 3090,
+            format: "all", formatstrict: true, dimension: "small", width: 120, height: 20,
+            sync: false,
+          }, callBackForSmaato);
+        </script>
+        
         <img src="img/default.jpg" alt="default" class="albumart">
         <div class="btn fa fa-clock-o timer " style="position: absolute;  top:0;  left: 0;" ></div>
 
