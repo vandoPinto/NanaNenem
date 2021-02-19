@@ -2,11 +2,19 @@
 
 <body>
     <script>
-    alert(document.ReactNativeWebView)
     alert(window.ReactNativeWebView)
+     
+      
+      function  myFunction(){
     document.ReactNativeWebView.postMessage("Hello React Native!");
-      window.ReactNativeWebView.postMessage("Hello React Native!");
+       
+    window.ReactNativeWebView.postMessage("Hello React Native!");
+        alert(window.ReactNativeWebView)
+    alert(document.ReactNativeWebView)
+      }
     </script>
+  
+  <button onclick="myFunction()">Click me</button>
 </body>
 
 </html>
