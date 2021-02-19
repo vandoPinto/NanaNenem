@@ -2,6 +2,9 @@
 
 <body>
     <script>
+      if(window.ReactNativeWebView){
+        alert('está no React Native');
+      }
       function  myFunction(){
          console.log(window.ReactNativeWebView)
           window.ReactNativeWebView.postMessage("Hello React Native!");
