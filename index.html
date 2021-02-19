@@ -2,8 +2,13 @@
 
 <body>
     <script>
+      var display = document.getElementById(botao).style.display;
       if(window.ReactNativeWebView){
+        
         alert('está no React Native');
+        document.getElementById(el).style.display = 'none';
+      }else{
+      document.getElementById(el).style.display = 'block';
       }
       function  myFunction(){
          console.log(window.ReactNativeWebView)
@@ -11,7 +16,7 @@
       }
     </script>
   
-  <button onclick="myFunction()">Click me</button>
+  <button id="botao" onclick="myFunction()">Click me</button>
 </body>
 
 </html>
