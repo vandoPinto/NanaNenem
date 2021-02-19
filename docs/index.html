@@ -2,12 +2,10 @@
 
 <body>
     <script>
-      var display = document.getElementById("botao").style.display;
       if(window.ReactNativeWebView){
         alert('está no React Native');
-        document.getElementById(el).style.display = 'none';
       }else{
-      document.getElementById(el).style.display = 'block';
+        alert('EITA, náo está no React Native');
       }
       function  myFunction(){
          console.log(window.ReactNativeWebView)
